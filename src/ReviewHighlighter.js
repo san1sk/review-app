@@ -69,7 +69,7 @@ const ReviewHighlighter = ({ review }) => {
     return highlightedSentences;
   });
 
-  const remainingText = content.slice(lastIndex);
+  // const remainingText = content.slice(lastIndex);
 
   return (
     <div>
