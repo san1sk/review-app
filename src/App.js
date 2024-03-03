@@ -1,24 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ReviewList from './ReviewList';
+// import ReviewHighlighter from './ReviewHighlighter';
+// import reviews_data from './reviews_data.json';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return(
+  <>
+  <ReviewList />
+  {/* <ReviewHighlighter reviews={reviews_data}/> */}
+  </>
   );
 }
 
