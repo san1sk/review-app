@@ -6,7 +6,6 @@ const ReviewList = () => {
   
   const [reviews, setReviews] = useState([]);
   // let currentIndex=0;
-
   useEffect(() => {
     // Fetch reviews from the JSON file (assuming it's in the public folder)
     const fetchData = async () => {
@@ -31,6 +30,7 @@ const ReviewList = () => {
             <div className='top'>
               <img className="user" src='/user.jpeg' alt='#user'></img>
               <h3>{review.reviewer_name}</h3><p>wrote at</p><h3>{review.source.name}</h3>
+              <div className='date'>{review.date}</div>
             </div>
             <div className="content"> 
               <div className='rating'>
@@ -39,7 +39,7 @@ const ReviewList = () => {
               {/* <div className='content-text'>
                 {review.content}
               </div> */}
-            <ReviewHighlighter review={review}/>
+            <ReviewHighlighter className="content-text" review={review}/>
             </div>
           </div>
         ))}

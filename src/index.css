@@ -15,9 +15,28 @@ h3{
 .top{
   display: flex;
   align-items:center;
+  max-width: 100vh;
+}
+.date{
+  font-size: 14px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 10vh;
+}
+.rating{
+  font-size: 16px;
+  text-align: left;
+  margin-top: -10px;
 }
 p{
   margin: 0 -5px;
+}
+
+.content-text{
+  margin: 0;
+  max-width: 80vh;
+  font-size: 14px;
 }
 
 .reviewbox{
